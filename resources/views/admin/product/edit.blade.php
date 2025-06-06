@@ -43,11 +43,11 @@
                                                 <div class="card-body">
                                                     <div class="row g-gs">
                                                         <div class="col-lg-12">
-                                                            <div class="form-group"><label for="productname"
+                                                            <div class="form-group"><label for="name"
                                                                     class="form-label">Product Name</label>
                                                                 <div class="form-control-wrap">
                                                                     <input type="text" class="form-control"
-                                                                        id="productname" placeholder="Product Name"
+                                                                        id="name" placeholder="Product Name"
                                                                         value="{{ $furniture->name }}" name="name">
                                                                 </div>
                                                             </div>
@@ -70,8 +70,9 @@
                                                                     class="form-label">Code</label>
                                                                 <div class="form-control-wrap">
                                                                     <input type="text" class="form-control"
+                                                                        name="product_code"
                                                                         value="{{ $furniture->product_code }}"
-                                                                        id="product_code" placeholder="Code number">
+                                                                        id="product_code" placeholder="Product code">
 
                                                                 </div>
                                                             </div>

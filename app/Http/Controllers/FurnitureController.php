@@ -47,9 +47,6 @@ class FurnitureController extends Controller
             'avatar' => $avatarPath,
         ]);
 
-     
-
-
         return redirect()->route('furniture.index')->with('success', 'Furniture added!');
     }
 
@@ -61,26 +58,29 @@ class FurnitureController extends Controller
     }
 
 
-    // Xử lý cập nhật dữ liệu
+    // Cập nhật
     public function update(Request $request, $id)
     {
         $request->validate([
             'product_code' => 'required|unique:furniture,product_code,' . $id,
             'name' => 'required|string|max:255',
             'price' => 'required|numeric',
-            'avatar' => 'nullable|string|max:255',
+            'avatar' => 'nullable|string|max:255', // nếu avatar là file thì cần sửa validate
         ]);
-
+    
+        // Debug dữ liệu gửi lên
+        // dd($request->all());  
+    
         $furniture = Furniture::findOrFail($id);
-
+    
         $furniture->product_code = $request->product_code;
         $furniture->name = $request->name;
         $furniture->price = $request->price;
         $furniture->avatar = $request->avatar;
         $furniture->save();
-
+    
         return redirect()->route('admin.product.index')->with('success', 'Cập nhật sản phẩm thành công!');
-    }
+    }    
 
 
 

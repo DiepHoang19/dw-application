@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('product_code')->unique(); 
             $table->string('name');
             $table->decimal('price', 12, 2); // giá, 12 số tổng, 2 số sau dấu phẩy
-            $table->string('avatar'); 
+            $table->string('avatar') -> nullable(); 
             $table->timestamps();
             $table->softDeletes();
         });
