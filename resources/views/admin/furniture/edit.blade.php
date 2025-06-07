@@ -84,7 +84,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <label class="form-label">Thumbnail</label>
+                                                <label class="form-label">Avatar</label>
                                                 <div class="form-control-wrap">
                                                     <div class="image-upload-wrap d-flex flex-column align-items-center">
                                                         <div style="width: 500px">
@@ -99,10 +99,10 @@
                                                                 class="btn btn-md btn-primary">Upload</label>
                                                         </div>
                                                     </div>
-                                                    @error('avatar')
+                                                    {{-- @error('avatar')
                                                         <div class="alert alert-danger mt-1 mb-1">
                                                             {{ $message }}</div>
-                                                    @enderror
+                                                    @enderror --}}
                                                 </div>
                                                 <div class="form-note mt-3">
                                                     Set the product thumbnail image. Only *.png, *.jpg and

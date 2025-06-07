@@ -84,7 +84,7 @@ class FurnitureController extends Controller
 
 
 
-     // Xóa mềm sản phẩm
+ 
      public function destroy($id)
      {
          $furniture = Furniture::findOrFail($id);
@@ -93,14 +93,12 @@ class FurnitureController extends Controller
          return redirect()->route('furniture.index')->with('success', 'Sản phẩm đã được chuyển vào thùng rác.');
      }
  
-     // Hiển thị danh sách sản phẩm đã xóa (trash)
      public function trash()
      {
          $furnitures = Furniture::onlyTrashed()->get();
          return view('admin.furniture.trash', compact('furnitures'));
      }
  
-     // Khôi phục sản phẩm đã xóa
      public function restore($id)
      {
          $furniture = Furniture::onlyTrashed()->findOrFail($id);
@@ -109,7 +107,6 @@ class FurnitureController extends Controller
          return redirect()->route('furniture.trash')->with('success', 'Đã khôi phục sản phẩm.');
      }
  
-     // Xóa vĩnh viễn
      public function forceDelete($id)
      {
          $furniture = Furniture::onlyTrashed()->findOrFail($id);

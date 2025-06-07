@@ -7,13 +7,13 @@
                     <div class="nk-block-head">
                         <div class="nk-block-head-between flex-wrap gap g-2">
                             <div class="nk-block-head-content">
-                                <h2 class="nk-block-title">Add Product</h1>
+                                <h2 class="nk-block-title">Add</h1>
                                     <nav>
                                         <ol class="breadcrumb breadcrumb-arrow mb-0">
                                             <li class="breadcrumb-item"><a href="#">Home</a></li>
                                             <li class="breadcrumb-item"><a href="#">ecommerce</a></li>
                                             <li class="breadcrumb-item active" aria-current="page">Add
-                                                Product</li>
+                                            </li>
                                         </ol>
                                     </nav>
                             </div>
@@ -96,7 +96,7 @@
                                                         {{-- Thumbnail (avatar) --}}
                                                         <div class="col-12">
                                                             <div class="form-group">
-                                                                <label class="form-label">Thumbnail</label>
+                                                                <label class="form-label">Avatar</label>
                                                                 <div class="form-control-wrap">
                                                                     <div
                                                                         class="image-upload-wrap d-flex flex-column align-items-center">
