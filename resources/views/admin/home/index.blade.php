@@ -16,6 +16,6 @@
                 </td>
                 <td><a href="{{ route('product.trash', ['id' => $product->id]) }}" class="btn-delete">Delete</a></td>
             </tr>
-        @endforeach --}}
+         @endforeach --}}
     </table>
 @endsection

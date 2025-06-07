@@ -137,7 +137,7 @@
                                             class="nk-nav-link nk-nav-toggle"> eCommerce </a>
                                         <ul class="nk-nav-sub">
                                             <li class="nk-nav-item"><a href="ecommerce/products.html"
-                                                    class="nk-nav-link"> Products </a></li>
+                                                    class="nk-nav-link"> Furniture </a></li>
                                             <li class="nk-nav-item"><a href="ecommerce/categories.html"
                                                     class="nk-nav-link"> Categories </a></li>
                                             <li class="nk-nav-item"><a href="ecommerce/add-product.html"

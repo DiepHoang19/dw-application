@@ -17,13 +17,13 @@ class FurnitureController extends Controller
 
         $furniture = $query->latest()->get();
 
-        return view('admin.product.index', compact('furniture'));
+        return view('admin.furniture.index', compact('furniture'));
     }
 
     
     public function create()
     {
-        return view('admin.product.create');
+        return view('admin.furniture.create');
     }
 
     public function store(Request $request)
@@ -54,7 +54,7 @@ class FurnitureController extends Controller
     public function edit($id)
     {
         $furniture = Furniture::findOrFail($id);
-        return view('admin.product.edit', compact('furniture'));
+        return view('admin.furniture.edit', compact('furniture'));
     }
 
 
@@ -65,11 +65,11 @@ class FurnitureController extends Controller
             'product_code' => 'required|unique:furniture,product_code,' . $id,
             'name' => 'required|string|max:255',
             'price' => 'required|numeric',
-            'avatar' => 'nullable|string|max:255', // nếu avatar là file thì cần sửa validate
+            'avatar' => 'nullable|string|max:255', 
         ]);
     
-        // Debug dữ liệu gửi lên
-        // dd($request->all());  
+   
+        dd($request->all());  
     
         $furniture = Furniture::findOrFail($id);
     
@@ -79,7 +79,7 @@ class FurnitureController extends Controller
         $furniture->avatar = $request->avatar;
         $furniture->save();
     
-        return redirect()->route('admin.product.index')->with('success', 'Cập nhật sản phẩm thành công!');
+        return redirect()->route('/')->with('success', 'Cập nhật sản phẩm thành công!');
     }    
 
 
@@ -97,7 +97,7 @@ class FurnitureController extends Controller
      public function trash()
      {
          $furnitures = Furniture::onlyTrashed()->get();
-         return view('admin.product.trash', compact('furnitures'));
+         return view('admin.furniture.trash', compact('furnitures'));
      }
  
      // Khôi phục sản phẩm đã xóa

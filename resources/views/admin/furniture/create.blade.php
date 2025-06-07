@@ -24,7 +24,7 @@
                                                 class="icon ni ni-eye"></em><span>View</span></a></li>
                                     <li><a href="{{ route('furniture.index') }}"
                                             class="btn btn-primary d-none d-md-inline-flex"><em
-                                                class="icon ni ni-eye"></em><span>View Products</span></a>
+                                                class="icon ni ni-eye"></em><span>View Furniture</span></a>
                                     </li>
                                 </ul>
                             </div>

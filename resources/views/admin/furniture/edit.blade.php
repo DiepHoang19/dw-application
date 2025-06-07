@@ -7,13 +7,13 @@
                     <div class="nk-block-head">
                         <div class="nk-block-head-between flex-wrap gap g-2">
                             <div class="nk-block-head-content">
-                                <h2 class="nk-block-title">Edit Product</h1>
+                                <h2 class="nk-block-title">Edit</h1>
                                     <nav>
                                         <ol class="breadcrumb breadcrumb-arrow mb-0">
                                             <li class="breadcrumb-item"><a href="#">Home</a></li>
                                             <li class="breadcrumb-item"><a href="#">ecommerce</a></li>
                                             <li class="breadcrumb-item active" aria-current="page">Edit
-                                                Product</li>
+                                            </li>
                                         </ol>
                                     </nav>
                             </div>
@@ -24,7 +24,7 @@
                                                 class="icon ni ni-eye"></em><span>View</span></a></li>
                                     <li><a href="{{ route('furniture.index') }}"
                                             class="btn btn-primary d-none d-md-inline-flex"><em
-                                                class="icon ni ni-eye"></em><span>List Products</span></a>
+                                                class="icon ni ni-eye"></em><span>List </span></a>
                                     </li>
                                 </ul>
                             </div>
